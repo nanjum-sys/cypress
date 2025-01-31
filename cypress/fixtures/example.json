@@ -1,0 +1,14 @@
+{
+  "url":{
+    "QA":"http://mediq-portal-qa-1819555039.us-east-1.elb.amazonaws.com/users/login/"
+  },
+  "username":{
+    "MedIQuser":"admin@cardiology.com"
+  },
+  "password":{
+    "MedIQpass":"123"
+
+  }
+
+
+}

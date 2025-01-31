@@ -1,0 +1,15 @@
+{
+  "name": "mediq",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "Naheed",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "cypress": "^13.17.0"
+  }
+}
