@@ -1,6 +1,6 @@
-import Login from '../support/Login-page'
+import AddExam from '../support/Add-exam-page';
 describe('Sarc MedIQ web app Login Happy Positive Test Cases Flow', function () {
-    const login = new Login
+    const Add = new AddExam
     beforeEach(function () {
         cy.fixture('example').then(function(testdata){       
         this.testdata = testdata       
@@ -11,16 +11,18 @@ describe('Sarc MedIQ web app Login Happy Positive Test Cases Flow', function () 
            return false     
             });   
             });  
-            cy.viewport(1220, 800) 
+               cy.viewport(1220, 800) 
           });
 
 
     it('Verify user Login with valid credentials into MedIQ', function(){
-        login.OpenURL(this.testdata.url.QA);
-        login.enterEmail(this.testdata.username.MedIQuser);
-        login.enterPassword(this.testdata.password.MedIQpass);
-        login.button()
-        login.logout()
+        Add.OpenURL(this.testdata.url.QA);
+        Add.enterEmail(this.testdata.username.MedIQuser);
+        Add.enterPassword(this.testdata.password.MedIQpass);
+        Add.button();
+        Add.Share_exam();
+
+      //  Add.logout()
 
     })
 })

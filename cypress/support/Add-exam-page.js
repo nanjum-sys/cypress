@@ -42,6 +42,30 @@ export class AddExam{
         cy.get('.btn-primary').click()
 
     }
+    Share_exam(){
+        cy.get('tbody > :nth-child(1) > .pl-0').click();
+        //Click on third result
+        cy.get(':nth-child(3) > .pl-0').click();
+        //Go to report
+        cy.get('.card-toolbar > .btn-navyBlue').click();
+        //Sign report
+        cy.get('.col-3 > .btn').click();
+        //Back to exam
+        cy.get('[href="/patients/512/exams/3163/"]').click();
+        //Click on back button
+        cy.get('.container-fluid > :nth-child(2) > .btn').click();
+        //Share Exam
+        cy.get(':nth-child(3) > :nth-child(10) > .btn').click();
+        //Share click
+        cy.get('#shareExamForm > .btn').click();
+        cy.wait(2000)
+        cy.get('.modal-footer > .btn-primary').click()
+        //View share
+        cy.wait(4000)
+        cy.get(':nth-child(3) > :nth-child(10) > .btn').click()
+
+
+    }
 
 
 }
