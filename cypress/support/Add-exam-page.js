@@ -25,7 +25,7 @@ export class AddExam{
     }
     newExam(){
         //Click on Lee Michael patient
-        cy.get('tbody > :nth-child(1) > .pl-0').click();
+        cy.get(':nth-child(2) > .pl-0 > .d-flex > div > .text-dark-75').click();
         //Click on add new exam button
         cy.get('[href="/patients/512/exams/"]').click();
         //Click on drop down and select the jan
@@ -43,15 +43,19 @@ export class AddExam{
 
     }
     Share_exam(){
-        cy.get('tbody > :nth-child(1) > .pl-0').click();
-        //Click on third result
-        cy.get(':nth-child(3) > .pl-0').click();
+        //Click on patient Lee michael
+        cy.get(':nth-child(2) > .pl-0 > .d-flex > div > .text-dark-75').click();
+        //Click on second result
+        cy.get('#patientExamsTable > tbody > tr:nth-child(2) > td.pl-0.py-4.dtr-control > a > span').click();
         //Go to report
+        cy.wait(4000)
         cy.get('.card-toolbar > .btn-navyBlue').click();
+        // retry until this textarea has the correct value
+        cy.get('.col > .btn').should('be.visible', 'Unsign Report')
         //Sign report
-        cy.get('.col-3 > .btn').click();
+     /*   cy.get('.col-3 > .btn').click();
         //Back to exam
-        cy.get('[href="/patients/512/exams/3163/"]').click();
+        cy.get('[href="/patients/512/exams/4697/"]').click();
         //Click on back button
         cy.get('.container-fluid > :nth-child(2) > .btn').click();
         //Share Exam
@@ -62,7 +66,7 @@ export class AddExam{
         cy.get('.modal-footer > .btn-primary').click()
         //View share
         cy.wait(4000)
-        cy.get(':nth-child(3) > :nth-child(10) > .btn').click()
+        cy.get(':nth-child(3) > :nth-child(10) > .btn').click()*/
 
 
     }

@@ -33,7 +33,7 @@ export class Report{
         cy.get('#id_assignee').select('Alan Sosnovsky').should('have.value', '2')
         //Back to exam
         cy.wait(4000)
-        cy.get('[href="/patients/513/exams/3782/"]').click({mutiple:true});
+        cy.get('[href="/patients/512/exams/3161/"]').click({mutiple:true});
         //Click on Back
         cy.get('.container-fluid > :nth-child(2) > .btn').click({force:true});
 
@@ -48,10 +48,10 @@ export class Report{
         //Click on custome
         cy.get('.p2a8XOFtY6rfhLzk9coL > .btn').click();
         //Click on value
-        cy.get('.IHx242IPrPewvZZ6d7VR').type('2')
+        cy.get(':nth-child(1) > :nth-child(2) > .IHx242IPrPewvZZ6d7VR').type('2')
         //Click on unit nav
         cy.wait(4000)
-        cy.get('#dd-33 > input').type('mm')
+      //  cy.get('#dd-33 > input').type('mm')
         //Click on delete
         cy.get(':nth-child(3) > :nth-child(4)').click();
     }

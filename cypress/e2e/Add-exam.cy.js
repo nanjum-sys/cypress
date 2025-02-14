@@ -11,7 +11,7 @@ describe('Sarc MedIQ web app Login Happy Positive Test Cases Flow', function () 
            return false     
             });   
             });  
-               cy.viewport(890, 400) 
+               cy.viewport(1360, 960) 
           });
 
 

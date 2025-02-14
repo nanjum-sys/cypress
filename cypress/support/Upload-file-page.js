@@ -36,7 +36,7 @@ export class Upload{
         cy.get('[data-original-title="Measurements"] > .FqMq_x64V7gcyBqeBvef').click();
         //Click on echo
         cy.wait(2000)
-        cy.get('#parentid_-1').click();
+     /*   cy.get('#parentid_-1').click();
         //Click on LV
         cy.get('#heading12 > #parentid_1').click();
         //Click on LV first
@@ -44,7 +44,7 @@ export class Upload{
         //Click on LVOT
         cy.get('.IHx242IPrPewvZZ6d7VR').click({multiple:true}).type('3');
         //Click on cm
-    //   cy.get('#dd-16 > input').clear().type('cm')
+    //   cy.get('#dd-16 > input').clear().type('cm')*/
 
 
         
