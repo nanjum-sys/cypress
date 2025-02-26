@@ -24,5 +24,5 @@ describe('Sarc MedIQ web app Login Happy Positive Test Cases Flow', function () 
         Add.logout()
 
     })
-})
+}) 
 

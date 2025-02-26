@@ -12,7 +12,7 @@ export class Report{
         cy.get('#id_password').click()
         cy.get('#id_password').type(MedIQpass)
     }
-    button(){
+      button(){
         cy.wait(2000)
         cy.get(':nth-child(5) > .btn').click();
     }

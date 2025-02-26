@@ -1,12 +1,16 @@
 {
   "url":{
-    "QA":"http://mediq-portal-qa-1819555039.us-east-1.elb.amazonaws.com/users/login/"
+    "QA":"http://mediq-portal-qa-1819555039.us-east-1.elb.amazonaws.com/users/login/",
+    "Stage":"https://staging.mediqportal.com/"
+    
   },
   "username":{
-    "MedIQuser":"admin@cardiology.com"
+    "MedIQuser":"admin@cardiology.com",
+    "StageMedIQuser":"naheed.anjum@sarcmediq.com"
   },
   "password":{
-    "MedIQpass":"123"
+    "MedIQpass":"123",
+    "StageMedIQpass":"NaHeEd#12$%"
 
   }
 
